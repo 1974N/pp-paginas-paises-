@@ -1,7 +1,7 @@
 const paisesData = [];
 
-document.getElementById('buscar')
-addEventListener('click', function() {
+// Función para buscar el país
+function buscarPais() {
     const countryName = document.getElementById('entrada').value.trim(); // Elimina espacios innecesarios
 
     if (countryName) {
@@ -44,4 +44,30 @@ addEventListener('click', function() {
     } else {
         document.getElementById('resultado').innerHTML = '<p style="color: red;">Por favor, ingresa un país.</p>';
     }
+}
+function borrarPais(){
+    document.getElementById('paisNombre').innerText = '';
+    document.getElementById('bandera').src = '';
+    document.getElementById('paisCapital').innerText = '';
+    document.getElementById('paisRegion').innerText = '';
+    document.getElementById('paisSubregion').innerText = '';
+    document.getElementById('paisPoblacion').innerText = '';
+    document.getElementById('paisArea').innerText = '';
+    document.getElementById('paisIdiomas').innerText = '';
+    document.getElementById('paisMonedas').innerText = '';
+    document.getElementById('resultado').innerHTML = ''
+}
+
+// Asociar el evento de clic del botón
+document.getElementById('buscar').addEventListener('click', buscarPais);
+
+// Asociar el evento de teclado para el campo de entrada
+document.getElementById('entrada').addEventListener('keydown', function(e) {
+    if (e.key === "Enter") {
+        buscarPais(); // Llamar a la función de búsqueda
+    }
 });
+
+document.getElementById('borrar').addEventListener('click', borrarPais);
+
+
