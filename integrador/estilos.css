@@ -7,31 +7,40 @@
 body {
     align-items: center;
     background-color: white;
-    background-image: url(banderas.jpg);
+    background-image: url(banderasmundo.jpg);
 }
 .contenedor {
-    position: relative;
+    display: center;
 }
 input {
     width: 350px;
     padding: 10px;
-    padding-right: 30px;
-    border-radius: 5px;
+    padding-right: 5px;
     outline: none;
     font-size:medium;
 }
 button {
+    position: center;
+    align-items: center;
     background-color: skyblue;
-    padding: 20px;
-    position:relative;
-    border: none;
-    margin-left: auto;
+    padding: 13px;
+    position: left;
+    margin-right: auto;
     border: 1px solid black; 
-    cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
 }
-
+button2 {
+    position: center;
+    align-items: center;
+    background-color: red;
+    padding: 13px;
+    position: left;
+    margin-right: auto;
+    border: 1px solid black; 
+    font-size: 16px;
+    border-radius: 5px;
+}
 
 .tarjeta {
     width: 250px ;
