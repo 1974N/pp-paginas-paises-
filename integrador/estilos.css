@@ -19,7 +19,7 @@ input {
     outline: none;
     font-size:medium;
 }
-button {
+#buscar {
     position: center;
     align-items: center;
     background-color: skyblue;
@@ -30,7 +30,7 @@ button {
     font-size: 16px;
     border-radius: 5px;
 }
-button2 {
+#borrar{
     position: center;
     align-items: center;
     background-color: red;
@@ -63,6 +63,21 @@ h1 span{
     background-color: white;
 }
 
-@media (min-width: 700px){
-    
+.tarjetaCeleste {
+    border: 5px solid #1E90FF; 
 }
+
+.tarjetaVerde {
+    border: 5px solid green;
+}
+
+.tarjetaRoja {
+    border: 5px solid red;
+}
+
+.tarjetaAzul {
+    border: 5px solid blue;
+}
+
+
+
