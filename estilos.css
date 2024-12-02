@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px; /* Espacio entre elementos */
+    gap: 10px; 
 }
 
 input {
@@ -87,18 +87,18 @@ h1 span {
     border: 5px solid blue;
 }
 
-/* Media Query para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .contenedor {
-        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        flex-direction: column; 
     }
 
     input {
-        width: 100%; /* Ajusta el tamaño del input al 100% del contenedor */
+        width: 100%; 
     }
 
     #buscar, #borrar {
-        width: 50%; /* Los botones también ocuparán el 100% del ancho */
-        text-align: center; /* Centrar el texto dentro de los botones */
+        width: 50%; 
+        text-align: center; 
     }
 }
